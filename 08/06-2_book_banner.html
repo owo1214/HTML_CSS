@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진과 패딩이 적용된 북 배너</title>
+    <style>
+        *{ /* 모든 태그 선택자 */
+            margin: 0;
+            padding: 0;
+        }
+        #banner {
+            width: 185px;
+            height: 236px;
+            background-image: url("img/banner_bg.jpg");
+            border: solid 1px #cccccc;
+        }
+        #banner img{
+            margin: 202px 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>PHP 책소개 </h3>
+    <ul>
+        <li>저자 : 황재호</li>
+        <li>출판사 : 한빛아카데미</li>
+        <li>가격 : 30,000원</li>
+    </ul>
+    <div id="banner">
+        <a href="#"><img src="img/buy.png"></a>
+    </div>
+    
+    <br><br><a href="../index.htm"><i>원래 페이지로 돌아가기</i></a>
+</body>
+</html>
