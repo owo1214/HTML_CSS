@@ -1,0 +1,7 @@
+h3 {
+    color: rgb(255, 196, 196);
+    /*  color : #ff0000; //16진수 표기법
+        color : red;
+    */
+    font-size: 20px;
+}

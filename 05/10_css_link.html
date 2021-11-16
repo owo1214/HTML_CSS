@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 링크 </title>
+    <style>
+        a:link{ /* a 태그에서 처음 로딩 했을 때 */
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:visited { /* 방문 했던 사이트에 대한 설정 */
+            color:#00ff00;
+        }
+        a:hover { /* 마우스를 롤오버 했을때 */
+            color: #ff0000;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        a:active{ /* 마우스를 링크걸린 곳에 클릭했을때 */
+            color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <a href="08_font_famally.html" target="_self"> 폰트패밀리 </a>
+</body>
+</html>
