@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블과 셀의 크기 지정하기</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 610px;
+        }
+        table, td, th{
+            border: solid 1px #cccccc;
+        }
+        tr{
+            height: 40px;
+        }
+        #table_title{
+            height: 30px;
+        }
+        #col1, #col4{
+            width: 90px;
+        }
+        #col2, #col3{
+            width: 60px;
+        }
+        #col5, #col6{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h2>KTX 열차표 예매</h2>
+
+    <table>
+        <tr id="table_title">
+            <th>열차번호</th>
+            <th>출발</th>
+            <th>도착</th>
+            <th>출발시간</th>
+            <th>특실</th>
+            <th>일반실</th>
+            <th>소요시간</th>
+        </tr>
+        <tr>
+            <td id="col1">175</td>
+            <td id="col2">서울</td>
+            <td id="col3">부산</td>
+            <td id="col4">21:00</td>
+            <td id="col5"><img src="img/full.png" ></td>
+            <td id="col6"><img src="img/full.png" ></td>
+            <td id="col7">02:44</td>
+        </tr>
+        <tr>
+            <td id="col1">177</td>
+            <td id="col2">서울</td>
+            <td id="col3">부산</td>
+            <td id="col4">21:30</td>
+            <td id="col5"><img src="img/empty.png" ></td>
+            <td id="col6"><img src="img/empty.png" ></td>
+            <td id="col7">02:38</td>
+        </tr>
+        <tr>
+            <td id="col1">179</td>
+            <td id="col2">서울</td>
+            <td id="col3">부산</td>
+            <td id="col4">22:00</td>
+            <td id="col5"><img src="img/empty.png" ></td>
+            <td id="col6"><img src="img/empty.png" ></td>
+            <td id="col7">02:42</td>
+        </tr>
+    </table>
+
+    <br><br><a href="../index.htm"><i>원래 페이지로 돌아가기</i></a>
+</body>
+</html>
