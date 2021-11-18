@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입 페이지</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        h4{
+            margin: 10px 0 0 30px;
+            border-bottom: solid 2px #4b84ff; 
+        }
+        #form{
+            width: 800px;
+            margin: 10px 0 0 50px;
+            font-size: 13px;
+            color: rgb(34, 34, 34);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+        .ul_li{
+            border-bottom: solid 1px rgb(170, 170, 170);
+        }
+        .ul_li li{
+            display: inline-block;
+        }
+        .ul_li li.li1{
+            width: 100px;
+            text-align: right;
+            font-weight: bold;
+        }
+        .ul_li li.li2{
+            width: 350px;
+        }
+        .ul_li li.li2 input.bthp{
+            width: 45px;
+        }
+        li{
+           margin-bottom: 10px; 
+        }
+        .ul_li .dutton{
+            text-align: center;
+        }
+        form span{
+            color: rgb(202, 23, 23);
+        }
+    </style>
+</head>
+<body>
+    <h4>▣ 회원가입정보</h4>
+    
+    <form>
+        <ul id="form">
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>아이디 </li>
+                    <li class="li2"><input type="text"></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>비밀번호 </li>
+                    <li class="li2"><input type="password"></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>비밀번호 확인 </li>
+                    <li class="li2"><input type="password"></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>이름 </li>
+                    <li class="li2"><input type="text"></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>생년월일 </li>
+                    <li class="li2">
+                        <input class="bthp" type="text"> 년&nbsp;
+                        <input class="bthp" type="text"> 월&nbsp;
+                        <input class="bthp" type="text"> 일&nbsp;
+                        <input type="radio" name="birthday" checked>음력 &nbsp;
+                        <input type="radio" name="birthday" checked>양력
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>이메일 </li>
+                    <li class="li2"><input type="text"></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>휴대전화 </li>
+                    <li class="li2">
+                        <input type="text" class="bthp"> - 
+                        <input type="text" class="bthp"> - 
+                        <input type="text" class="bthp">
+                    </li>
+                </ul>
+            </li>            
+            
+            </li>
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>직업 </li>
+                    <li class="li2">
+                        <select>
+                            <option>직업선택</option>
+                            <option>학생</option>
+                            <option>회사원</option>
+                            <option>주부</option>
+                            <option>공무원</option>
+                            <option>기타</option>
+                        </select>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <ul class="ul_li">
+                    <li class="li1"><span>* </span>영어수강목적</li>
+                    <li class="li2">
+                        <input type="checkbox" name="purpose1">시험대비
+                        <input type="checkbox" name="purpose2">업무상
+                        <input type="checkbox" name="purpose3">취미
+                        <input type="checkbox" name="purpose4">기타
+
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li class="li1"> &nbsp; </li>
+                    <li class="li2">
+                        <center>
+                            <input type="reset" value="◎가입취소" class="button">
+                            &nbsp;&nbsp;
+                            <input type="submit" value="◎가입완료" class="button">
+                        </center>
+
+                    </li>
+                </ul>
+            </li>
+
+
+         </ul>
+    </form>
+
+    <br><br><a href="../index.htm"><i>원래 페이지로 돌아가기</i></a>
+</body>
+</html>

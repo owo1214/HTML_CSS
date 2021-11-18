@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지와 테두리 사이의 흰색 공간 삭제하기</title>
+    <style>
+        .items{
+            border: solid 3px #000000;
+            float: left;
+            margin: 5px;
+        }
+        .items img{ /* float 으로 이미지에 border를 넣을 경우*/
+            display: block; /* 이미지 하단에 공백을 제거함*/
+        }
+    </style>
+</head>
+<body>
+    <div class="items">
+        <img src="img/image1.jpg" width="120px">
+    </div>
+    <div class="items">
+        <img src="img/image2.jpg" width="120px">
+    </div>
+    <div class="items">
+        <img src="img/image3.jpg" width="120px">
+    </div>
+    <div class="items">
+        <img src="img/image4.jpg" width="120px">
+    </div>
+    <div class="items">
+        <img src="img/image5.jpg" width="120px">
+    </div>
+    <div class="items">
+        <img src="img/image6.jpg" width="120px">
+    </div>
+
+    <br><br><a href="../index.htm"><i>원래 페이지로 돌아가기</i></a>
+</body>
+</html>
