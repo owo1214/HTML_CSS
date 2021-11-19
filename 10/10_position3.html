@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션(Position)을 설정을 relative로 설정하기 </title>
+    <!-- 박스의 이동을 원래 박스의 위치가 기준점으로 해서 이동-->
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #parent{
+        width: 500px;
+        height: 300px;
+        border: solid 5px #000000;
+        margin: 50px 0 0 50px;
+    }
+    #box1, #box2, #box3{ /* 동시 선택자 */
+        width: 80px;
+        height: 80px;
+        background-color: purple; /* CSS에서 충돌 항목 발생 야기*/
+    }
+    #box1{ background-color: #ff0000; }
+    #box2{ background-color: #00ff00; }
+    #box3{ background-color: #0000ff; }
+
+    #box2{
+        position: absolute; /* absolute: 왼쪽 최상단(0.0) 기준점 */
+        top: 20px;
+        left: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">박스 A</div>
+        <div id="box2">박스 B</div>
+        <div id="box3">박스 C</div>
+    </div>
+
+    <br><br><a href="../index.htm"><i>원래 페이지로 돌아가기</i></a>
+</body>
+</html>
